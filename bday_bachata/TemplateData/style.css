@@ -6,13 +6,20 @@ html, body {
   background-color: #2e140d;
 }
 .message {
-  width: 90%;
   max-width: 960px;
-  padding: 1vh 0 0 0;
+  width: 90%;
+  max-height: 20vh;
+  overflow-y: auto;
   font-size: clamp(12px, 2vh, 18px);
-  text-align: center;
+  text-align: left;
   color: white;
-  margin: 0;
+  border-radius: 8px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE/Edge */
+}
+
+.message::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 #unity-container {
   display: flex;
