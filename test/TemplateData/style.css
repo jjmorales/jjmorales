@@ -31,6 +31,8 @@ html, body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 #unity-container.unity-desktop {
   position: absolute;
